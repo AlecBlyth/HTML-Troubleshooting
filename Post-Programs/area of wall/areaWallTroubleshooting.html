@@ -1,0 +1,33 @@
+<html>
+
+	<head>
+		<title>functions and conditional loops</title>
+	    <script type="text/javascript" src="calculation.js"></script>
+	</head>
+	
+	
+	<body>
+		<script type="text/javascript">
+		
+			var width = 0;
+			var height = 0;
+			var numberWalls = 0;
+			var displayInformation = 0;
+			function getInfo()
+			{width = parseFloat(prompt("What is the wall width?"));
+			height = parseFloat(prompt("What is the wall height?"));
+			numberWalls = parseFloat(prompt("How many walls are there?"));}
+			function calculateArea(width, height, numberWalls)
+			{wallArea = (width * height) * numberWalls;
+			return wallArea;}
+			document.write(width);
+			document.write(height);
+			document.write(numberWalls);
+			displayInformation = calculateArea(width, height, numberWalls);
+			document.write("<p>The total area of the room is " + displayInfomation + "</p>");
+			
+		</script>
+	</body>
+
+
+</html>

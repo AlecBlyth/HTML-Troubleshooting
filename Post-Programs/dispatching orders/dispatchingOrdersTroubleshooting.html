@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Arrays, Loops and Tables</title>
+	</head>
+	
+	<body>
+		
+		<h1>Arrays, Loops and Tables in JavaScript</h1>
+		
+		<script type="text/javascript">
+		
+		var orderValue = [23.57,30.65,43.27,12.85];
+		var orderNumbers = [1234,1246,12358,12360];  
+		var ordStatus = ["shipped","unshipped","shipped","shipped"];
+		var category = 'KDY';
+		
+		//start table
+		
+		document.write('<table border="1" width="25%">');
+		document.write('<tr><th>Order Number</th><th>Order Value</th></tr>');
+		
+		//loop through orders and display one by one
+		
+		for (var i =0; i < orderNumbers.length; i++)
+		{
+			
+			if (ordStatus[i] == 'unshipped')
+			{
+			alert(ordStatus);
+			document.write('<tr>');
+				document.write('<td>' + category + orderNumbers[i] + '</td>');
+				document.write('<td>' + orderValue[i] + '</td>');
+				document.write('<td>' + ordStatus[i] + '</td>');
+			document.write('</tr>');
+			}
+		}
+		
+		//end table 
+		document.write('</table>');
+		</script>
+		
+	
+		
+		
+	</body>
+</html>
